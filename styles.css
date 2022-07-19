@@ -1,0 +1,150 @@
+/* TAGS */
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 0 -200px;
+  background-color: hsl(225, 100%, 94%);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* CLASS */
+.container {
+  width: 30%;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 20px;
+  min-width: 375px;
+}
+
+.img-music img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.summary {
+  padding: 25px;
+  padding-top: 0;
+  text-align: center;
+}
+
+.summary h1 {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+}
+
+.summary-description {
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  padding: 0 20px;
+  padding-top: 0;
+}
+
+.plan {
+  width: 100%;
+  background-color: hsl(225, 100%, 96%);
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 14px;
+  }
+
+.plan-img {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.plan-img img {
+  width: 60%;
+}
+
+.plan-price .annual {
+  text-align: left;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  margin: 0;
+}
+
+.plan-price .price {
+  margin: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan-change {
+  flex-grow: 1;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.plan-change a {
+  color: hsl(245, 75%, 52%);
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 500;
+}
+
+.plan-change a:hover {
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+.payment button {
+  width: 100%;
+  background-color: hsl(245, 75%, 52%);
+  height: 45px;
+  border-radius: 10px;
+  border: 0;
+  margin-top: 20px;
+  color: white;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.payment button:hover {
+  opacity: 0.6;
+}
+
+.payment a {
+  display: block;
+  margin-top: 20px;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: 900;
+  opacity: 0.6;
+  color: hsl(223, 47%, 23%);
+  text-decoration: none;
+}
+
+.payment a:hover {
+  opacity: 1;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-image: url("images/pattern-background-mobile.svg");
+  }
+
+  .container {
+    width: 80%;
+  }
+}
